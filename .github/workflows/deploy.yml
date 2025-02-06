@@ -14,8 +14,8 @@ jobs:
           username: laracasts
           key: ${{secrets.PRIVATE_KEY}}
           script: |
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh
+            export NVM_DIR=/home/laracasts/.nvm
+            source /home/laracasts/.nvm/nvm.sh
             cd www
             git pull origin main
             composer update --ignore-platform-reqs
